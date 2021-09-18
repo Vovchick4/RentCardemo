@@ -1,4 +1,3 @@
-const paralaxImage = document.getElementById("paralaxImage");
 const navBar = document.getElementById("header");
 const list = document.querySelectorAll("#mp_nav_li_dropdown");
 const sideBar = document.getElementById("side_bar_content");
@@ -23,11 +22,6 @@ window.addEventListener("scroll", () => {
       element.style.background = "rgba(194, 194, 194, 0.5)";
     }
   }
-
-  let transformY = window.scrollY / 2;
-  let dynamikScale = 1.2 + transformY / 3000 >= 2 ? 2 : 1.2 + transformY / 3000;
-
-  paralaxImage.style.transform = `translate3d(0, ${transformY}px, 0) scale(${dynamikScale})`;
 });
 
 function openCloseSideBar() {
