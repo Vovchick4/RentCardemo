@@ -254,13 +254,29 @@
 }
 
 .article_splide_slider {
-  padding: 75px 0;
-  background-color: var(--background-color);
+  padding: 70px 0;
+  background-color: var(--text-title-color);
 }
 
-.splide__pagination {
+.splide_title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.your-class-pagination {
   position: absolute;
-  bottom: 20px;
+  bottom: -18px !important;
+}
+
+.your-class-page {
+  width: 10px !important;
+  height: 10px !important;
+  background: var(--background-color) !important;
+}
+
+.your-class-page.is-active {
+  background: var(--background-content-color) !important;
 }
 
 .content_rent_card {
@@ -272,12 +288,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  background-color: var(--body-background);
-  transition: transform 0.3s;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .rent_card:hover {
   transform: scale(1.05);
+  box-shadow: 0 3px 10px var(--company-section);
 }
 
 .rent_card_title_image {

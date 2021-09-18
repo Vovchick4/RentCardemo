@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
+  .splide_container > .splide_title {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 1200px) {
