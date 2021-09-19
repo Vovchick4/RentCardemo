@@ -5,31 +5,50 @@ const overlay = document.getElementById("side_bar_overlay");
 const body = document.getElementById("body");
 const svg = document.getElementById("hamburger");
 let sideBarOpened = false;
+const pathname = window.location.pathname;
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 100) {
+if (pathname === "/pages/rent.html" || pathname === "/pages/contacts.html") {
+  window.addEventListener("load", () => {
     navBar.style.background = "#333";
 
     for (let i = 0; i < list.length; i++) {
       const element = list[i];
       element.style.background = "rgb(58, 58, 58)";
     }
-  } else {
-    navBar.style.background = "transparent";
+  });
+} else {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= 100) {
+      navBar.style.background = "#333";
 
-    for (let i = 0; i < list.length; i++) {
-      const element = list[i];
-      element.style.background = "rgba(194, 194, 194, 0.5)";
+      for (let i = 0; i < list.length; i++) {
+        const element = list[i];
+        element.style.background = "rgb(58, 58, 58)";
+      }
+    } else {
+      navBar.style.background = "transparent";
+
+      for (let i = 0; i < list.length; i++) {
+        const element = list[i];
+        element.style.background = "rgba(194, 194, 194, 0.5)";
+      }
     }
-  }
-});
+  });
+}
 
 function openCloseSideBar() {
   if (sideBarOpened) {
     svg.classList.toggle("opened");
     body.style.overflowY = "scroll";
-    if (!(window.scrollY >= 100)) {
-      navBar.style.background = "transparent";
+    if (
+      pathname === "/pages/rent.html" ||
+      pathname === "/pages/contacts.html"
+    ) {
+      navBar.style.background = "#333";
+    } else {
+      if (!(window.scrollY >= 100)) {
+        navBar.style.background = "transparent";
+      }
     }
     sideBar.style.transform = "translate(100%)";
     overlay.style.opacity = "0";

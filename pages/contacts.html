@@ -1,174 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/global/normalize.css">
-    <link rel="stylesheet" href="/styles/global/main.css">
-    <link rel="stylesheet" href="/styles/global/variables.css">
-    <link rel="stylesheet" href="/styles/partials/header.css">
-    <link rel="stylesheet" href="/styles/partials/sideBar.css">
-    <link rel="stylesheet" href="/styles/partials/footer.css">
-    <link rel="stylesheet" href="/styles/pages/contacts.css">
-    <link rel="stylesheet" href="/styles/global/media.css">
-    <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/global/normalize.css">
+  <link rel="stylesheet" href="/styles/global/main.css">
+  <link rel="stylesheet" href="/styles/global/variables.css">
+  <link rel="stylesheet" href="/styles/partials/header.css">
+  <link rel="stylesheet" href="/styles/partials/sideBar.css">
+  <link rel="stylesheet" href="/styles/partials/footer.css">
+  <link rel="stylesheet" href="/styles/pages/contacts.css">
+  <link rel="stylesheet" href="/styles/global/media.css">
+  <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
 </head>
+
 <body id="body">
-    <div class="wrapper">
-        <header id="header">
-        <div class="container">
-          <div class="header_logo_content">
-            <div class="header_logo">
-              <div>
-                <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
-              </div>
+  <div class="wrapper">
+    <header id="header">
+      <div class="container">
+        <div class="header_logo_content">
+          <div class="header_logo">
+            <div>
+              <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
             </div>
-            <nav>
-              <ul class="nav_links">
-                <li class="mp_nav_li">
-                  <p class="mp_nav_link">Прокат</p>
-                  <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
-                    <ul class="mp_ul_dropdown">
-                      <li class="mp_li_dropdown">Пункт</li>
-                      <li class="mp_li_dropdown">Пункт</li>
-                      <li class="mp_li_dropdown">Пункт</li>
-                      <li class="mp_li_dropdown">Пункт</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mp_nav_li">
-                  <p class="mp_nav_link">Послуги</p>
-                  <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
-                    <ul class="mp_ul_dropdown">
-                      <li class="mp_li_dropdown">Пункт 1</li>
-                      <li class="mp_li_dropdown">Пункт 2</li>
-                      <li class="mp_li_dropdown">Пункт 3</li>
-                      <li class="mp_li_dropdown">Пункт 4</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mp_nav_li">
-                  <p class="mp_nav_link">Про компанію</p>
-                </li>
-                <li><a class="mp_nav_link" href="#">Новини</a></li>
-                <li><a class="mp_nav_link" href="#">Контакти</a></li>
-              </ul>
-            </nav>
           </div>
-          <div class="header_phone_content">
-            <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
-            <button class="header_btn">Зв'язатися з нами</button>
-            <button id="hamburger" class="hamburger_navbar" onclick="openCloseSideBar()" aria-label="Main Menu">
-              <svg width="43" height="43" viewBox="0 0 100 100">
-                <path class="line line1"
-                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3"
-                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        </header>
-        <aside class="side_bar">
-        <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
-        <div id="side_bar_content" class="side_bar_content">
-          <ul class="side_bar_links">
-            <li class="mp_side_bar_li">
-              <p class="mp_side_bar_link">Прокат</p>
-              <ul class="mp_side_bar_dropdown">
-                <li class="side_bar_li_dropdown">Пункт 1</li>
-                <li class="side_bar_li_dropdown">Пункт 2</li>
-                <li class="side_bar_li_dropdown">Пункт 3</li>
-                <li class="side_bar_li_dropdown">Пункт 4</li>
-              </ul>
-            </li>
-            <li class="mp_side_bar_li">
-              <p class="mp_side_bar_link">Послуги</p>
-              <ul class="mp_side_bar_dropdown">
-                <li class="side_bar_li_dropdown">Пункт 1</li>
-                <li class="side_bar_li_dropdown">Пункт 2</li>
-                <li class="side_bar_li_dropdown">Пункт 3</li>
-                <li class="side_bar_li_dropdown">Пункт 4</li>
-              </ul>
-            </li>
-            <li class="mp_side_bar_li">
-              <p class="mp_side_bar_link">Про компанію</p>
-              <ul class="mp_side_bar_dropdown">
-                <li class="side_bar_li_dropdown">Пункт 1</li>
-                <li class="side_bar_li_dropdown">Пункт 2</li>
-                <li class="side_bar_li_dropdown">Пункт 3</li>
-                <li class="side_bar_li_dropdown">Пункт 4</li>
-              </ul>
-            </li>
-            <li><a class="mp_side_bar_link" href="#">Новини</a></li>
-            <li><a class="mp_side_bar_link" href="#">Контакти</a></li>
-          </ul>
-          <button class="side_bar_btn">Зв'язатися з нами</button>
-        </div>
-        </aside>
-
-        <main>
-            <section class="map_container">
-                <iframe style="border: none;" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48264190866!2d23.942024239291307!3d49.8327785737579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1631977573932!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-        <section class="section_form">
-            <div class="section_form_overlay"></div>
-            <div class="main_container">
-                <div class="section_form_container">
-                <div>
-                    <div class="callback_contacts">
-                        <p class="callback_contacts_title">Контакти</p>
-                        <p class="callback_contacts_sub_title">Головний офіс:</p>
-                        <p class="callback_contacts_description">Номер телефону київстар: +380963339567</p>
-                        <p class="callback_contacts_description">Номер телефону лайф: +380935639523</p>
-                        <p class="callback_contacts_description">Пошта: emai@gmail.com</p>
-                    </div>
-                    <p class="form_arrow_image_title">За детальною інформацією, або при виникненні будь яких питань, заповнюйте форму зворотнього звязку і ми звяжемося з вами</p>
-                    <img class="form_arrow_image" src="/images/arrow.png" alt="Arrow">
+          <nav>
+            <ul class="nav_links">
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Прокат</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                  </ul>
                 </div>
-                <form class="callback_form">
-                    <p class="callback_form_title">Напишіть нам</p>
-                    <input type="text" class="callback_input" placeholder="Ім'я" autocomplete="username" required>
-                    <input type="tel" class="callback_input" placeholder="Телефон" autocomplete="tel" required>
-                    <input type="email" class="callback_input" placeholder="Email" autocomplete="email" required>
-                    <textarea class="callback_input" rows="7" placeholder="Введіть повідомлення" required></textarea>
-                    <button type="submit" class="callback_button">Надіслати</button>
-                </form>
+              </li>
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Послуги</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown">Пункт 1</li>
+                    <li class="mp_li_dropdown">Пункт 2</li>
+                    <li class="mp_li_dropdown">Пункт 3</li>
+                    <li class="mp_li_dropdown">Пункт 4</li>
+                  </ul>
                 </div>
-            </div>
-        </section>
-        </main>
-       
-        <footer>
-        <div class="main_container">
-          <div class="footer_content">
-            <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
-            <ul class="mp_footer_list">
-              <li class="mp_footer_li">Послуги</li>
-              <li class="mp_footer_li">Асистенс</li>
-              <li class="mp_footer_li">Контакти</li>
+              </li>
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Про компанію</p>
+              </li>
+              <li><a class="mp_nav_link" href="#">Новини</a></li>
+              <li><a class="mp_nav_link" href="#">Контакти</a></li>
             </ul>
-            <ul class="mp_footer_list">
-              <li class="mp_footer_li">Про компанію</li>
-              <li class="mp_footer_li">Умови оренди</li>
-              <li class="mp_footer_li">Про нас</li>
-              <li class="mp_footer_li">Часті запитання</li>
-              <li class="mp_footer_li">Політика конфінденційності</li>
-            </ul>
-            <ul class="mp_footer_list">
-              <li class="mp_footer_li">Контакти</li>
-              <li class="mp_footer_li">email@gmail.com</li>
-              <li class="mp_footer_li">+(380) 1234563138</li>
-              <li class="mp_footer_li"><a href="https:/vk.com">Наш вк</a></li>
-            </ul>
-          </div>
+          </nav>
         </div>
-        </footer>
+        <div class="header_phone_content">
+          <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
+          <button class="header_btn">Зв'язатися з нами</button>
+          <button id="hamburger" class="hamburger_navbar" onclick="openCloseSideBar()" aria-label="Main Menu">
+            <svg width="43" height="43" viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+        </div>
       </div>
+    </header>
+    <aside class="side_bar">
+      <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
+      <div id="side_bar_content" class="side_bar_content">
+        <ul class="side_bar_links">
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Прокат</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Послуги</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Про компанію</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li><a class="mp_side_bar_link" href="#">Новини</a></li>
+          <li><a class="mp_side_bar_link" href="#">Контакти</a></li>
+        </ul>
+        <button class="side_bar_btn">Зв'язатися з нами</button>
+      </div>
+    </aside>
 
-      <script src="/js/index.js"></script>
+    <main class="main_content">
+      <section>
+        <iframe style="border: none;" class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48264190866!2d23.942024239291307!3d49.8327785737579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1631977573932!5m2!1sru!2sua"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <section class="section_form">
+        <div class="section_form_overlay"></div>
+        <div class="main_container">
+          <div class="section_form_container">
+            <div>
+              <div class="callback_contacts">
+                <p class="callback_contacts_title">Контакти</p>
+                <p class="callback_contacts_sub_title">Головний офіс:</p>
+                <p class="callback_contacts_description">Номер телефону київстар: +380963339567</p>
+                <p class="callback_contacts_description">Номер телефону лайф: +380935639523</p>
+                <p class="callback_contacts_description">Пошта: emai@gmail.com</p>
+              </div>
+              <p class="form_arrow_image_title">За детальною інформацією, або при виникненні будь яких питань,
+                заповнюйте форму зворотнього звязку і ми звяжемося з вами</p>
+              <img class="form_arrow_image" src="/images/arrow.png" alt="Arrow">
+            </div>
+            <form class="callback_form">
+              <p class="callback_form_title">Напишіть нам</p>
+              <input type="text" class="callback_input" placeholder="Ім'я" autocomplete="username" required>
+              <input type="tel" class="callback_input" placeholder="Телефон" autocomplete="tel" required>
+              <input type="email" class="callback_input" placeholder="Email" autocomplete="email" required>
+              <textarea class="callback_input" rows="7" placeholder="Введіть повідомлення" required></textarea>
+              <button type="submit" class="callback_button">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="main_container">
+        <div class="footer_content">
+          <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Послуги</li>
+            <li class="mp_footer_li">Асистенс</li>
+            <li class="mp_footer_li">Контакти</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Про компанію</li>
+            <li class="mp_footer_li">Умови оренди</li>
+            <li class="mp_footer_li">Про нас</li>
+            <li class="mp_footer_li">Часті запитання</li>
+            <li class="mp_footer_li">Політика конфінденційності</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Контакти</li>
+            <li class="mp_footer_li">email@gmail.com</li>
+            <li class="mp_footer_li">+(380) 1234563138</li>
+            <li class="mp_footer_li"><a href="https:/vk.com">Наш вк</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/index.js"></script>
 </body>
+
 </html>

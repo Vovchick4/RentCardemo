@@ -9,12 +9,11 @@
   right: 0;
   padding: 20px;
   border-top: 2px solid var(--text-color);
-  /* border-left: 2px solid var(--text-color); */
   z-index: 150;
   width: 40%;
   background-color: var(--background-content-color);
   overflow-y: auto;
-  transform: translate(100%);
+  transform: translate(104%);
   transition: transform 0.3s;
 }
 

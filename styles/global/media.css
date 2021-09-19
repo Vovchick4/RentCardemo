@@ -1,5 +1,4 @@
 @media (max-width: 1200px) {
-
   .container {
     padding: 0 15px;
   }
@@ -29,23 +28,23 @@
   .splide_container > .splide_title {
     padding: 0 15px;
   }
-  .form_arrow_image_title{
+  .form_arrow_image_title {
     display: none;
   }
-  .form_arrow_image{
+  .form_arrow_image {
     display: none;
   }
-  .section_form_container{
+  .section_form_container {
     grid-template-columns: 1fr;
     align-items: center;
     padding: 0 80px;
   }
-  .callback_contacts{
+  .callback_contacts {
     position: relative;
     margin: 0;
   }
 
-  .callback_contacts::after{
+  .callback_contacts::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -54,11 +53,18 @@
     border-radius: 1000px;
     border: 1.5px solid var(--text-hover-color);
   }
-  .callback_form{
+  .callback_form {
     border-top-right-radius: 0;
     border-bottom-right-radius: 40px;
     border-top: none;
     border-bottom: 3px solid var(--text-hover-color);
+  }
+
+  .rent_car_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter_content {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -75,13 +81,18 @@
   .mp_footer_list {
     text-align: center;
   }
-  .section_form_container{
+  .section_form_container {
     padding: 0 40px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+  .rent_car_container {
+    grid-template-columns: 1fr;
+  }
+}
 
+@media (max-width: 600px) {
   .footer_content {
     grid-template-columns: 1fr;
   }
@@ -108,8 +119,11 @@
   .footer_content {
     padding: 15px 0;
   }
-  .section_form_container{
+  .section_form_container {
     padding: 0;
+  }
+  .filter_content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -120,17 +134,16 @@
 }
 
 @media (max-width: 483px) {
-  .rent_content_list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .callback_form{
+  .callback_form {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .callback_contacts{
+  .callback_contacts {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .filter_content {
+    grid-template-columns: 1fr;
   }
 }
