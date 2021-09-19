@@ -112,7 +112,7 @@
 
         <main>
             <section class="map_container">
-                <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=14Z1HUZGpkmoWthtLE_Dz8EoL6fXm3pjn" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/d/embed?mid=14Z1HUZGpkmoWthtLE_Dz8EoL6fXm3pjn" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
         <section class="section_form">
             <div class="section_form_overlay"></div>
@@ -129,12 +129,16 @@
                     <p class="form_arrow_image_title">За детальною інформацією, або при виникненні будь яких питань, заповнюйте форму зворотнього звязку і ми звяжемося з вами</p>
                     <img class="form_arrow_image" src="/images/arrow.png" alt="Arrow">
                 </div>
-                <form class="callback_form">
+                <form id="callback_form" class="callback_form">
                     <p class="callback_form_title">Напишіть нам</p>
-                    <input type="text" class="callback_input" placeholder="Ім'я" autocomplete="username" required>
-                    <input type="tel" class="callback_input" placeholder="Телефон" autocomplete="tel" required>
-                    <input type="email" class="callback_input" placeholder="Email" autocomplete="email" required>
-                    <textarea class="callback_input" rows="7" placeholder="Введіть повідомлення" required></textarea>
+                    <input id="callback_input_name" type="text" class="callback_input" placeholder="Ім'я" autocomplete="username" >
+                    <p id="callback_name_error" class="callback_error">error</p>
+                    <input id="callback_input_tel" type="tel" class="callback_input" placeholder="Телефон" autocomplete="tel">
+                    <p id="callback_tell_error" class="callback_error">error</p>
+                    <input id="callback_input_email" type="text" class="callback_input" placeholder="Email" autocomplete="email" >
+                    <p id="callback_email_error" class="callback_error">error</p>
+                    <textarea id="callback_input_textarea" class="callback_input" rows="7" placeholder="Введіть повідомлення" ></textarea >
+                    <p id="callback_textarea_error" class="callback_error">error</p>
                     <button type="submit" class="callback_button">Надіслати</button>
                 </form>
                 </div>
@@ -169,6 +173,7 @@
         </footer>
       </div>
 
+      <script src="/js/contacts.js"></script>
       <script src="/js/index.js"></script>
 </body>
 </html>

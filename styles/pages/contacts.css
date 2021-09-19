@@ -99,7 +99,7 @@
 .callback_input{
     resize: vertical;
     width: 100%;
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 10px;
     border: none;
     background-color: var(--body-background);
@@ -117,6 +117,16 @@
     transform: scale(1.03);
 }
 
+.callback_error{
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    color: var(--text-error-color);
+    padding-top: 5px;
+    padding-left: 2.5px;
+    transition: opacity .2s, visibility .2s;
+}
+
 .callback_button{
     width: 80%;
     margin: auto;
@@ -131,4 +141,3 @@
     background-color: var(--background-content-color);
     color: var(--text-hover-color);
 }
-
