@@ -134,3 +134,7 @@
   background-color: var(--background-content-color);
   color: var(--text-hover-color);
 }
+
+.callback_input_error{
+  border-bottom: 1.5px solid red!important;
+}
