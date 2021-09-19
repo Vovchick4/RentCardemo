@@ -1,5 +1,5 @@
 const regEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const regTel = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/
+const regTel = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){5,14}(\s*)?$/
 const nameInput = document.getElementById("callback_input_name")
 const telInput = document.getElementById("callback_input_tel")
 const emailInput = document.getElementById("callback_input_email")
