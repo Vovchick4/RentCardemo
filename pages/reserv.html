@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Reservation</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/global/normalize.css">
+  <link rel="stylesheet" href="/styles/global/main.css">
+  <link rel="stylesheet" href="/styles/global/variables.css">
+  <link rel="stylesheet" href="/styles/partials/header.css">
+  <link rel="stylesheet" href="/styles/partials/sideBar.css">
+  <link rel="stylesheet" href="/styles/partials/footer.css">
+  <link rel="stylesheet" href="/styles/pages/reserv.css">
+  <link rel="stylesheet" href="/styles/global/media.css">
+  <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header id="header">
+      <div class="container">
+        <div class="header_logo_content">
+          <div class="header_logo">
+            <div>
+              <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
+            </div>
+          </div>
+          <nav>
+            <ul class="nav_links">
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Прокат</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                    <li class="mp_li_dropdown">Пункт</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Послуги</p>
+                <div id="mp_nav_li_dropdown" class="mp_nav_li_dropdown">
+                  <ul class="mp_ul_dropdown">
+                    <li class="mp_li_dropdown">Пункт 1</li>
+                    <li class="mp_li_dropdown">Пункт 2</li>
+                    <li class="mp_li_dropdown">Пункт 3</li>
+                    <li class="mp_li_dropdown">Пункт 4</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mp_nav_li">
+                <p class="mp_nav_link">Про компанію</p>
+              </li>
+              <li><a class="mp_nav_link" href="#">Новини</a></li>
+              <li><a class="mp_nav_link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header_phone_content">
+          <a class="header_phone" href="tel:380123456313">+(380) 123456313</a>
+          <button class="header_btn">Зв'язатися з нами</button>
+          <button id="hamburger" class="hamburger_navbar" onclick="openCloseSideBar()" aria-label="Main Menu">
+            <svg width="43" height="43" viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside class="side_bar">
+      <div id="side_bar_overlay" class="side_bar_overlay" onclick="openCloseSideBar()"></div>
+      <div id="side_bar_content" class="side_bar_content">
+        <ul class="side_bar_links">
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Прокат</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Послуги</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li class="mp_side_bar_li">
+            <p class="mp_side_bar_link">Про компанію</p>
+            <ul class="mp_side_bar_dropdown">
+              <li class="side_bar_li_dropdown">Пункт 1</li>
+              <li class="side_bar_li_dropdown">Пункт 2</li>
+              <li class="side_bar_li_dropdown">Пункт 3</li>
+              <li class="side_bar_li_dropdown">Пункт 4</li>
+            </ul>
+          </li>
+          <li><a class="mp_side_bar_link" href="#">Новини</a></li>
+          <li><a class="mp_side_bar_link" href="#">Контакти</a></li>
+        </ul>
+        <button class="side_bar_btn">Зв'язатися з нами</button>
+      </div>
+    </aside>
+
+    <main class="main_content">
+      <section class="hero_section">
+        <div class="main_container">
+          <form class="grid_content">
+            <div class="rent_card">
+              <img class="rent_card_image" src="/images/00a4a39c.png" alt="00a4a39c">
+              <p class="rent_card_tilte">Toyota RAV4 Hybrid</p>
+              <p class="rent_card_prices">Вартість оренди: <span class="rent_price">$</span><span
+                  class="rent_price">69</span></p>
+              <ul class="rent_card_option">
+                <li>Кількість діб: <span>1</span></li>
+              </ul>
+
+              <label for="input_checkbox">
+                <input type="checkbox" name="input_checkbox" value="check" id="input_agree" />
+              </label>
+
+              <button type="submit">Submit</button>
+            </div>
+            <div class="rent_form">
+              <p class="rent_form_title">Форма бронювання</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="main_container">
+        <div class="footer_content">
+          <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Послуги</li>
+            <li class="mp_footer_li">Асистенс</li>
+            <li class="mp_footer_li">Контакти</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Про компанію</li>
+            <li class="mp_footer_li">Умови оренди</li>
+            <li class="mp_footer_li">Про нас</li>
+            <li class="mp_footer_li">Часті запитання</li>
+            <li class="mp_footer_li">Політика конфінденційності</li>
+          </ul>
+          <ul class="mp_footer_list">
+            <li class="mp_footer_li">Контакти</li>
+            <li class="mp_footer_li">email@gmail.com</li>
+            <li class="mp_footer_li">+(380) 1234563138</li>
+            <li class="mp_footer_li"><a href="https:/vk.com">Наш вк</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/index.js"></script>
+  <script src="/js/reserv.js"></script>
+</body>
+
+</html>

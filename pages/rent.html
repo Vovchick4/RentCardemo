@@ -6,15 +6,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/global/normalize.css">
-  <link rel="stylesheet" href="/styles/global/main.css">
-  <link rel="stylesheet" href="/styles/global/variables.css">
-  <link rel="stylesheet" href="/styles/partials/header.css">
-  <link rel="stylesheet" href="/styles/partials/sideBar.css">
-  <link rel="stylesheet" href="/styles/partials/footer.css">
-  <link rel="stylesheet" href="/styles/pages/rent.css">
-  <link rel="stylesheet" href="/styles/global/media.css">
-  <link rel="stylesheet" href="/styles/animations/headerHamburger.css">
+  <link rel="stylesheet" href="../styles/global/normalize.css">
+  <link rel="stylesheet" href="../styles/global/main.css">
+  <link rel="stylesheet" href="../styles/global/variables.css">
+  <link rel="stylesheet" href="../styles/partials/header.css">
+  <link rel="stylesheet" href="../styles/partials/sideBar.css">
+  <link rel="stylesheet" href="../styles/partials/footer.css">
+  <link rel="stylesheet" href="../styles/pages/rent.css">
+  <link rel="stylesheet" href="../styles/global/media.css">
+  <link rel="stylesheet" href="../styles/animations/headerHamburger.css">
 </head>
 
 <body id="body">
@@ -24,7 +24,7 @@
         <div class="header_logo_content">
           <div class="header_logo">
             <div>
-              <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
+              <img class="header_logo_img" src="../images/logo.png" alt="Логотип" />
             </div>
           </div>
           <nav>
@@ -119,13 +119,13 @@
           <p class="filter_section_title">Каталог орендних авто у Львові</p>
 
           <div class="filter_content">
-            <button class="filter_btn active" onclick="cardsFilter(0, 1000)">Всі</button>
-            <button class="filter_btn" onclick="cardsFilter(15, 25)">Эконом</button>
-            <button class="filter_btn" onclick="cardsFilter(50, 100)">Середній</button>
-            <button class="filter_btn" onclick="cardsFilter(100, 200)">Внедорожник</button>
-            <button class="filter_btn" onclick="cardsFilter(150, 270)">Бізнес</button>
-            <button class="filter_btn" onclick="cardsFilter(270, 430)">Мінівен</button>
-            <button class="filter_btn" onclick="cardsFilter(800, 1000)">VIP (преміум)</button>
+            <button class="filter_btn active" onclick="cardsFilter(0, 1000, 'Lviv')">Всі</button>
+            <button class="filter_btn" onclick="cardsFilter(15, 25, 'Lviv')">Эконом</button>
+            <button class="filter_btn" onclick="cardsFilter(50, 100, 'Lviv')">Середній</button>
+            <button class="filter_btn" onclick="cardsFilter(100, 200, 'Lviv')">Внедорожник</button>
+            <button class="filter_btn" onclick="cardsFilter(150, 270, 'Lviv')">Бізнес</button>
+            <button class="filter_btn" onclick="cardsFilter(270, 430, 'Lviv')">Мінівен</button>
+            <button class="filter_btn" onclick="cardsFilter(800, 1000, 'Lviv')">VIP (преміум)</button>
           </div>
 
           <div class="rent_car_container">
@@ -625,7 +625,7 @@
     <footer>
       <div class="main_container">
         <div class="footer_content">
-          <img class="header_logo_img" src="/images/logo.png" alt="Логотип" />
+          <img class="header_logo_img" src="../images/logo.png" alt="Логотип" />
           <ul class="mp_footer_list">
             <li class="mp_footer_li">Послуги</li>
             <li class="mp_footer_li">Асистенс</li>
@@ -649,8 +649,8 @@
     </footer>
   </div>
 
-  <script src="/js/index.js"></script>
-  <script src="/js/rent.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/rent.js"></script>
 </body>
 
 </html>

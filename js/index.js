@@ -6,8 +6,12 @@ const body = document.getElementById("body");
 const svg = document.getElementById("hamburger");
 let sideBarOpened = false;
 const pathname = window.location.pathname;
-
-if (pathname === "/pages/rent.html" || pathname === "/pages/contacts.html") {
+console.log(pathname);
+if (
+  pathname === "/RentCardemo/pages/rent.html" ||
+  pathname === "/RentCardemo/pages/rent.html" ||
+  pathname === "/RentCardemo/pages/rent.html"
+) {
   window.addEventListener("load", () => {
     navBar.style.background = "#333";
 
@@ -41,8 +45,9 @@ function openCloseSideBar() {
     svg.classList.toggle("opened");
     body.style.overflowY = "scroll";
     if (
-      pathname === "/pages/rent.html" ||
-      pathname === "/pages/contacts.html"
+      pathname === "/RentCardemo/pages/rent.html" ||
+      pathname === "/RentCardemo/pages/rent.html" ||
+      pathname === "/RentCardemo/pages/rent.html"
     ) {
       navBar.style.background = "#333";
     } else {

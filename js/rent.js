@@ -1,5 +1,8 @@
 const cars = [
   {
+    filter: {
+      city: "Lviv",
+    },
     name: "Toyota Corolla 2019",
     prices: {
       one: "25",
@@ -7,9 +10,12 @@ const cars = [
       three: "30",
       for: "40",
     },
-    image: "/images/00a4a39c.png",
+    image: "../images/00a4a39c.png",
   },
   {
+    filter: {
+      city: "Lviv",
+    },
     name: "Toyota Corolla 2020",
     prices: {
       one: "25",
@@ -17,9 +23,12 @@ const cars = [
       three: "30",
       for: "40",
     },
-    image: "/images/2164ad95.png",
+    image: "../images/2164ad95.png",
   },
   {
+    filter: {
+      city: "Kyiv",
+    },
     name: "Toyota Corolla 2021",
     prices: {
       one: "115",
@@ -27,9 +36,12 @@ const cars = [
       three: "120",
       for: "200",
     },
-    image: "/images/8d7e6d54.png",
+    image: "../images/8d7e6d54.png",
   },
   {
+    filter: {
+      city: "Kharkiv",
+    },
     name: "Toyota Corolla 2018",
     prices: {
       one: "250",
@@ -37,7 +49,7 @@ const cars = [
       three: "300",
       for: "400",
     },
-    image: "/images/a442a0b5.png",
+    image: "../images/a442a0b5.png",
   },
 ];
 
@@ -55,19 +67,19 @@ function RenderCards(arr) {
     <img class="rent_card_image" src=${arr[i].image} width="220" height="120" alt="Smille">
     <div class="rent_content_list">
       <div class="list_container">
-        <img class="rent_list_svg" src="/images/fuel.svg" width="28" height="28" alt="Benz">
+        <img class="rent_list_svg" src="../images/fuel.svg" width="28" height="28" alt="Benz">
         <p class="rent_list_title">Бензин</p>
       </div>
       <div class="list_container">
-        <img class="rent_list_svg" src="/images/transmission.svg" width="28" height="28" alt="Benz">
+        <img class="rent_list_svg" src="../images/transmission.svg" width="28" height="28" alt="Benz">
         <p class="rent_list_title">Автомат</p>
       </div>
       <div class="list_container">
-        <img class="rent_list_svg" src="/images/seat.svg" width="28" height="28" alt="Benz">
+        <img class="rent_list_svg" src="../images/seat.svg" width="28" height="28" alt="Benz">
         <p class="rent_list_title">5 сидений</p>
       </div>
       <div class="list_container">
-        <img class="rent_list_svg" src="/images/car.svg" width="28" height="28" alt="Benz">
+        <img class="rent_list_svg" src="../images/car.svg" width="28" height="28" alt="Benz">
         <p class="rent_list_title">1,6 л. (122 л.с)</p>
       </div>
     </div>
@@ -97,20 +109,22 @@ function RenderCards(arr) {
   return (containerCard[0].innerHTML = str);
 }
 
-cardsFilter(0, 1000);
-function cardsFilter(fromvalue, toValue) {
+cardsFilter(0, 1000, "Lviv");
+function cardsFilter(fromvalue, toValue, cityValue) {
   let prices = document.getElementsByClassName("price");
   let rentCard = document.getElementsByClassName("rent_card");
 
-  if (fromvalue === 0 && toValue === 1000) {
+  if (fromvalue === 0 && toValue === 1000 && cityValue === "Lviv") {
     fromvalue = 0;
     toValue = 1000;
+    cityValue = "Lviv";
   }
 
   for (let i = 0; i < prices.length; i++) {
     if (
       prices[i].textContent >= fromvalue &&
-      prices[i].textContent <= toValue
+      prices[i].textContent <= toValue &&
+      cars[i].filter.city.indexOf(cityValue) > -1
     ) {
       rentCard[i].classList.add("show");
     } else {
