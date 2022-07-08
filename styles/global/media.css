@@ -1,4 +1,24 @@
+@media screen and (max-width: 1762px) {
+  .main_container {
+    max-width: 1100px;
+    padding: 0;
+  }
+  .rent_car_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 1200px) {
+  .main_container {
+    max-width: initial;
+    width: initial;
+    padding: 0;
+    margin: 0 38px;
+  }
+  .rent_car_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .container {
     padding: 0 15px;
   }
@@ -60,13 +80,19 @@
     border-bottom: 3px solid var(--text-hover-color);
   }
 
-  .rent_car_container {
-    grid-template-columns: repeat(2, 1fr);
+  .main_container {
+    max-width: initial;
+    width: initial;
+    padding: 0;
+    margin: 0 38px;
   }
+  .rent_car_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .filter_content {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .footer_content {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 80px;
@@ -152,11 +178,11 @@
     padding-right: 20px;
   }
 
-  .callback_contacts_title{
+  .callback_contacts_title {
     padding-top: 5px;
   }
 
-  .callback_form_title{
+  .callback_form_title {
     padding-top: 5px;
   }
 
@@ -164,7 +190,7 @@
     padding-top: 15px;
   }
 
-  .callback_button{
+  .callback_button {
     margin-top: 30px;
   }
 
@@ -174,6 +200,6 @@
 
   .footer_content {
     padding: 30px 20px;
-    gap: 25px
+    gap: 25px;
   }
 }
