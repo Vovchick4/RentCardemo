@@ -4,8 +4,8 @@ class CarService {
   }
 
   async fetchCars(params) {
-    const res = await fetch("http://localhost:4000/api/car")
-    const data = await res.json().then(res => res.data)
+    const res = await fetch("http://127.0.0.1:4000/api/cars")
+    const data = await res.json().then(res => res.cars)
 
     this.renderCars(data)
   }
@@ -14,12 +14,14 @@ class CarService {
     let containerCard = document.getElementsByClassName("rent_car_container");
     let str = ``;
 
-    array.map(({ title, image, price }) => (
+    array.map(({ title, image, price }) => {
+      const { href } = new URL(`blob:${image?.filename}`)
+
       str += `<div class="rent_card">
     <div class="rent_card_title_image">
       <p>${title}</p>
     </div>
-    <img class="rent_card_image" src="../images/2164ad95.png" width="220" height="120" alt="Smille">
+    <img class="rent_card_image" src=${href} width="220" height="120" alt="Smille">
     <div class="rent_content_list">
       <div class="list_container">
         <img class="rent_list_svg" src="../images/fuel.svg" width="28" height="28" alt="Benz">
@@ -59,12 +61,14 @@ class CarService {
 
     <button type="button" class="rent_card_confirm">Оренда</button>
   </div>`
-    ))
+    })
 
+    console.log(array); 
     return (containerCard[0].innerHTML = str);
   }
 }
 
+console.log(window.location);
 const carService = new CarService()
 
 document.addEventListener("DOMContentLoaded", () => {

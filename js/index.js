@@ -9,7 +9,7 @@ const pathname = window.location.pathname;
 console.log(pathname);
 if (
   pathname === "/RentCardemo/pages/rent.html" ||
-  pathname === "/RentCardemo/pages/rent.html" ||
+  pathname === "/pages/rent.html" ||
   pathname === "/RentCardemo/pages/rent.html"
 ) {
   window.addEventListener("load", () => {
@@ -46,7 +46,7 @@ function openCloseSideBar() {
     body.style.overflowY = "scroll";
     if (
       pathname === "/RentCardemo/pages/rent.html" ||
-      pathname === "/RentCardemo/pages/rent.html" ||
+      pathname === "/pages/rent.html" ||
       pathname === "/RentCardemo/pages/rent.html"
     ) {
       navBar.style.background = "#333";
